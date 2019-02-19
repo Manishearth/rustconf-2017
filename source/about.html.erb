@@ -7,19 +7,34 @@ title: About RustConf
 	<h1>About RustConf</h1>
 
 	<p>RustConf will be a gathering of both Rust's established community and its newcomers. We're excited to all get to spend time together, deep-diving into all things Rust.</p>
+		
 
-	<h1>About The Organizers</h1>
+			<p>
+				RustConf will be held in Portland, Oregon at the beautiful <a href="https://www.thenines.com/">Nines Hotel</a> in the heart of downtown Portland.
+			</p>
+	<hr>
 
-	<h4>RustConf is organized by </h4>
-    <% data.program.orga.each do |member| %>
-        <a href="https://twitter.com/<%= member.twitter %>" style="display: inline-block; padding-bottom: 5px;"><figure><img src="images/speakers/<%= member.image %>" class="spkPic2" /> <figcaption><%= member.name%></figcaption></figure></a>
-    <% end %>
+	<h2>On-Site Staff.</h2>
 
-<br><br>
-	<h4>Our amazing program committee </h4>
-    <% data.program.pc.each do |member| %>
-        <a href="https://twitter.com/<%= member.twitter %>" style="display: inline-block; padding-bottom: 5px;"><figure><img src="images/speakers/<%= member.image %>" class="spkPic2" /> <figcaption><%= member.name%></figcaption></figure></a>
-    <% end %>
+	<div class="center">
+	<figure class="spkFig">
+		<img class="spkHead" src="images/speakers/about-leah.jpg" alt="Leah Silber">
+		<figcaption>Leah Silber</figcaption>
+	</figure>
+	<figure class="spkFig">
+		<img class="spkHead" src="images/speakers/about-zulaica.jpg" alt="David Zulaica">
+		<figcaption>David Zulaica</figcaption>
+	</figure>
+	<figure class="spkFig">
+		<img class="spkHead" src="images/speakers/about-kingwhatevsleft.jpg" alt="Justin Sheets">
+		<figcaption>Justin Sheets</figcaption>
+	</figure>
+	</div>
+
+	<p>These are the people to look for on-site if you need help, have a question, have a CoC concern, or really anything at all. They'll be wearing TBD brightly colored shirts, which we'll point out in the opening keynote.</p>
+
+	<hr>
+
 	<h2 id="conduct">Code of Conduct</h2>
 
 	<div class="coc">
@@ -40,18 +55,4 @@ title: About RustConf
 		</p>
 	</div>
 
-  <h3>FAQs</h3>
-
-  <div class="coc">
-    <ul>
-      <% data.faq.each do |question| %>
-      <li class="question">
-        <%= question.q %>
-      </li>
-      <li class="answer">
-        <%= question.a %>
-      </li>
-      <% end %>
-    </ul>
-  </div>
 </div>
